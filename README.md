@@ -1,3 +1,3 @@
-# 2023-Mern-Study-Guide
+# 2023-Mern-User-Auth
 
 All info
