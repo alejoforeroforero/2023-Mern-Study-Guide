@@ -8,6 +8,8 @@
 # testing
 /coverage
 
+archivo.js
+
 # production
 /build
 
