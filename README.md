@@ -98,7 +98,7 @@ Note: This shows the simple steps to see the logic for creating a user Auth func
 
     app.listen(4000);
 
-# 6-Register a token in front end for user session
+# 5-Register a token in front end for user session
 
 - React:
 
