@@ -1,6 +1,8 @@
 # 2023-Mern-User-Auth
 
-# 1-Instalar librerias
+Note: This shows the simple steps to see the logic for creating a user Auth functionality. It misses validations and the idea is to split the code in differents files in order to organized it. Nevertheless in this simple way the functionality can be seen in a clear way.
+
+# 1-Install the librarires
 
     npm init 
 
@@ -16,14 +18,14 @@
 
     npm install jsonwebtoken 
 
-# 2-Hacer un post y revisar en Postman
+# 2-Make a post in postman to check it is working
 
     const express = require('express'); 
     const bodyParser = require('body-parser');
 
     const app = express();
 
-    app.use(bodyParser.json()); //Clave que vaya antes de las rutas. Con esto se puede usar json
+    app.use(bodyParser.json());
 
     app.post('/api/users/signup', (req, res, next)=>{
         res.json(req.body);
@@ -31,7 +33,7 @@
 
     app.listen(4000);
 
-# 3-Agregar validaciones
+# 3-Some validations in nodeJs
 
     const express = require('express');
     const bodyParser = require('body-parser');
@@ -55,7 +57,7 @@
 
     app.listen(4000);
 
-# 4-Encriptar el password
+# 4-Encrypt the password
 
     const express = require('express');
     const bodyParser = require('body-parser');
@@ -96,9 +98,9 @@
 
     app.listen(4000);
 
-# 6-Crear sesión de usuario con un token
+# 6-Register a token in front end for user session
 
-- Código React:
+- React:
 
         import { useState, useEffect } from "react";
 
@@ -165,7 +167,7 @@
 
         export default App;
         
- - Código Nodejs:
+ - Nodejs:
  
         const express = require('express');
         const bodyParser = require('body-parser');
